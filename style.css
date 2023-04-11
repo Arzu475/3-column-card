@@ -1,0 +1,153 @@
+:root{
+    --card-1:  hsl(31, 77%, 52%);
+    --card-2: hsl(184, 100%, 22%);
+    --card-3: hsl(179, 100%, 13%);
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --bg-heading-btn:  hsl(0, 0%, 95%)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-heading-btn);
+}
+
+.main-content{
+    display: flex;
+    max-width: 58rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    position: relative;
+    flex-direction: row;
+}
+
+/* Card One */
+.card-one, .card-two, .card-three{                            
+    background-color: var(--card-1);
+    height: 30rem;
+    width: 50rem;
+}
+
+.card-one img, .card-two img, .card-three img{
+    max-width: 100%;
+    padding: 1rem;
+    display: block;
+    margin-left: 1.5rem;
+    margin-top: 1.6rem;
+}
+
+.card-one h1, .card-two h1, .card-three h1{
+    color: var(--bg-heading-btn);
+    padding: 1rem;
+    margin-left: 1.5rem;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.card-one p, .card-two p, .card-three p{
+    padding: 1rem 1rem 1rem 2rem;
+    margin-left: .4rem;
+    line-height: 1.5;
+    color: var(--paragraph);
+    width: 15.8rem;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.card-one button, .card-two button, .card-three button{
+    padding: 1rem;
+    margin: 3.7rem 0 0 2.4rem;
+    border-radius: 2rem;
+    border: none;
+    width: 9.4rem;
+    display: block;
+    color: var(--card-1);
+    transition: all .7s .2s ease-in-out ;
+}
+
+.card-one > button:hover, .card-two > button:hover, .card-three > button:hover{
+    background: none;
+    color: var(--bg-heading-btn);
+    border: .15rem solid var(--bg-heading-btn);
+    cursor: pointer;
+}
+
+/* Card Two */
+.card-two{
+    background-color: var(--card-2);
+}
+
+.card-two p{
+    width: 16.8rem; 
+}
+
+.card-two button{
+    color: var(--card-2);
+}
+
+/* Card Three */
+.card-three{
+    background-color: var(--card-3);
+}
+
+.card-three p{
+    width: 17.7rem;
+}
+
+.card-three button{
+    color: var(--card-3);
+}
+
+.card-one button, .card-two button, .card-three button{
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.attribution{
+    position: absolute;
+    margin-top: 33rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: none;
+}
+
+ @media screen and (max-width: 450px) {  
+    .main-content{
+        flex-direction: column;
+        max-width: 21.5rem;
+       margin-top: 1rem;
+    }
+   
+    .card-one, .card-two, .card-three{
+        height: 28rem;
+    }
+    .card-one p{
+        width: 18rem;
+    }
+    .card-two p{
+        width: 18rem;
+    }
+    .card-three p{
+        width: 18rem;
+    }
+    .card-one button, .card-two button, .card-three button{
+        margin: 0.7rem 0 0 2.4rem;
+    }
+    .attribution{
+        margin-top: 87rem;
+    }
+}
