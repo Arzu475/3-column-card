@@ -26,7 +26,7 @@ body{
 
 .main-content{
     display: flex;
-    max-width: 58rem;
+    max-width: 65rem;
     overflow: hidden;
     border-radius: .5rem;
     position: relative;
